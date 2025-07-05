@@ -22,7 +22,10 @@ app.use(cookieParser());
 
 // Enable CORS (IMPORTANT for frontend to connect)
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: [
+    'https://kanban-todo-app-sigma.vercel.app', // Vercel frontend
+    'http://localhost:5173', // Local development
+  ],
   credentials: true,
 }));
 
