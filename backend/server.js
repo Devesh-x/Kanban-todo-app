@@ -22,10 +22,22 @@ app.use(cookieParser());
 
 // Enable CORS (IMPORTANT for frontend to connect)
 app.use(cors({
-  origin: [
-    'https://kanban-todo-app-sigma.vercel.app', // Vercel frontend
-    'http://localhost:5173', // Local development
-  ],
+  origin: (origin, callback) => {
+    const allowedOrigins = [
+      'https://kanban-todo-app-sigma.vercel.app', // main Vercel frontend
+      'http://localhost:5173', // local dev
+    ];
+    // Allow all Vercel preview URLs
+    if (
+      !origin ||
+      allowedOrigins.includes(origin) ||
+      (origin && origin.endsWith('.vercel.app'))
+    ) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
 }));
 
