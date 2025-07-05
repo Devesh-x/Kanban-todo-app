@@ -3,7 +3,7 @@
 Organiso is a modern, full-stack Kanban board application designed for teams and individuals to manage tasks efficiently. Featuring a clean green and white theme, intuitive UI, and robust backend, Organiso streamlines your workflow with style and reliability.
 ![Screenshot 2025-07-05 211423](https://github.com/user-attachments/assets/5542c2ae-5da5-46cb-b0a7-03d0289dc1ee)
 
-[Screenshot 2025-07-05 211439](https://github.com/user-attachments/assets/b5bbadb3-4fdb-4534-8426-9954d2eac6b3)
+![Screenshot 2025-07-05 211439](https://github.com/user-attachments/assets/b5bbadb3-4fdb-4534-8426-9954d2eac6b3)
 
 ![Screenshot 2025-07-05 211508](https://github.com/user-attachments/assets/ec0c251b-eb65-4c0e-bd75-e7ff5ac33f1c)
 
