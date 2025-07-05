@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux'
 import Sidebar from '../components/Sidebar'
 import { logout } from '../redux/features/auth/authSlice'
 import { Menu } from 'lucide-react'
+import axios from 'axios';
+const API = import.meta.env.VITE_API_BASE_URL;
 
 const MainLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -11,7 +13,7 @@ const MainLayout = () => {
   const navigate = useNavigate()
 
   const handleLogout = async () => {
-    await axios.post(`${API}/auth/logout`, {}, { withCredentials: true });
+    await axios.post(`${API}/users/logout`, {}, { withCredentials: true });
     dispatch(logout())
     navigate('/login')
   }
