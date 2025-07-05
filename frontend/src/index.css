@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom green and white theme */
+:root {
+  --primary: #10b981;
+  --primary-focus: #059669;
+  --primary-content: #ffffff;
+  --secondary: #f0fdf4;
+  --secondary-focus: #dcfce7;
+  --secondary-content: #166534;
+  --accent: #22c55e;
+  --accent-focus: #16a34a;
+  --accent-content: #ffffff;
+  --neutral: #f8fafc;
+  --neutral-focus: #f1f5f9;
+  --neutral-content: #1e293b;
+  --base-100: #ffffff;
+  --base-200: #f8fafc;
+  --base-300: #e2e8f0;
+  --base-content: #1e293b;
+  --info: #0ea5e9;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+}
+
+/* Dark mode overrides if needed */
+[data-theme="dark"] {
+  --base-100: #1e293b;
+  --base-200: #334155;
+  --base-300: #475569;
+  --base-content: #f8fafc;
+  --neutral: #334155;
+  --neutral-focus: #475569;
+  --neutral-content: #f8fafc;
+}
+
+/* Custom utility classes */
+.bg-primary-green {
+  background-color: #10b981;
+}
+
+.bg-secondary-green {
+  background-color: #f0fdf4;
+}
+
+.text-primary-green {
+  color: #10b981;
+}
+
+.text-secondary-green {
+  color: #166534;
+}
+
+.border-primary-green {
+  border-color: #10b981;
+}
+
+.hover\:bg-primary-green:hover {
+  background-color: #059669;
+}
+
+.hover\:text-primary-green:hover {
+  color: #10b981;
+}
