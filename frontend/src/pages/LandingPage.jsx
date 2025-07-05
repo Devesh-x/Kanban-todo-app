@@ -191,7 +191,8 @@ const LandingPage = () => {
             <span className="text-xl font-bold">Organiso</span>
           </div>
           <div className="text-gray-400 text-sm">
-            © 2024 Organiso. All rights reserved.
+            © 2024 Organiso. All rights reserved.<br/>
+            Created by: Devesh Rajput
           </div>
         </div>
       </footer>
